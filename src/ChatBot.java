@@ -8,7 +8,7 @@ import java.util.List;
 //Савин Евгений Александрович
 public class ChatBot {
     public static void main(String[] args){
-        try(
+        try(    //try-with-resources
         FileInputStream fileInputStream = new FileInputStream("ForFile/FileDefault");
         BufferedReader br= new BufferedReader(new InputStreamReader(fileInputStream));
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))){
